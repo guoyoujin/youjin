@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical">
+	<ScrollView 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@color/blank_background">
+		    
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="280dp"
+		    android:orientation="vertical" >
+		     
+			 <LinearLayout
+			    android:layout_marginTop="31.0dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		    	
+		   	   
+		   	    <EditText
+		   	        android:layout_marginLeft="18.0dp"
+		    	    android:id="@+id/doctorLoginNameEditText"
+		    	    android:layout_marginRight="18.0dp"
+		    	    android:layout_width="match_parent"
+		            android:layout_height="45dp"
+		            android:background="@drawable/doctorlogin" 
+		            android:singleLine="true"
+		    	    android:hint="手机号/邮箱/会员账号"
+		    	    android:selectAllOnFocus="true"
+		    	    android:textColor="#197ecf"
+		    	    android:textCursorDrawable="@null"
+		    	    android:paddingLeft="10dp"
+		    	    android:textSize="@dimen/doctorlogintextviewTextSize">
+		    	    <requestFocus />
+            </EditText>  
+		     </LinearLayout>
+		     
+			
+		     <LinearLayout
+		        android:layout_marginTop="17.0dp"
+		       	android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		   	    android:orientation="horizontal" >
+		   	    <RelativeLayout 
+		   	        android:layout_width="match_parent"
+		   	        android:layout_height="match_parent">
+		    	    
+		   	    <TextView
+		    	    android:layout_marginLeft="18.0dp"
+		            android:layout_width="45dp"
+		            android:layout_height="45dp"
+		            android:visibility="gone"
+		            android:text="密码"
+		            />
+		   	    <EditText
+		   	        android:layout_marginLeft="18.0dp"
+		    	    android:id="@+id/doctorLoginPasswordEditText"
+		    	    android:layout_marginRight="18.0dp"
+		    	    android:layout_width="match_parent"
+		            android:layout_height="45dp"
+		            android:background="@drawable/doctorlogin" 
+		            android:singleLine="true"
+		            android:inputType="textPassword"
+		    	    android:hint="请输入密码"
+		    	    android:selectAllOnFocus="true"
+		    	    android:textColor="#197ecf"
+		    	    android:textCursorDrawable="@null"
+		    	    android:paddingLeft="10dp"
+			 	    android:textSize="@dimen/doctorlogintextviewTextSize">
+		    	     
+            </EditText>
+
+		   	    <TextView
+		   	        android:id="@+id/doctorLoginForgetPasswordTextView"
+		   	        android:layout_width="wrap_content"
+		   	        android:layout_height="wrap_content"
+		   	        android:layout_alignBaseline="@+id/doctorLoginPasswordEditText"
+		   	        android:layout_alignBottom="@+id/doctorLoginPasswordEditText"
+		   	        android:layout_alignRight="@+id/doctorLoginPasswordEditText"
+		   	        android:textColor="#197ecf"
+		   	        android:layout_marginRight="5dp"
+			 	    android:textSize="@dimen/doctorlogintextviewTextSize"
+		   	        android:text="忘记密码？" />
+
+		    	    </RelativeLayout>
+		     </LinearLayout>
+		    
+			 <RelativeLayout
+			    android:layout_marginTop="17.0dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		    	
+		   	    <CheckBox
+			   	    android:id="@+id/doctorLoginLoginCheckBox"
+			   	    android:layout_marginLeft="18.0dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="20dp"
+			        android:button="@drawable/doctor_login_checked_selector"   
+			        android:text="  下次自动登录" 
+			        android:checked="true"
+			        android:textSize="@dimen/doctorlogintextviewTextSize"
+			    	android:textColor="#197ecf"
+			    	android:visibility="invisible"/>
+
+		   	    <CheckBox
+		   	        android:id="@+id/doctorLoginLoginflag"
+		   	        android:layout_width="wrap_content"
+		   	        android:layout_height="wrap_content"
+		   	        android:layout_alignParentRight="true"
+		   	        android:layout_alignParentTop="true"
+		   	        android:layout_marginRight="16dp"
+		   	        android:button="@drawable/doctor_login_checked_selector"   
+			        android:text="  记住账号" 
+			        android:checked="true"
+			        android:textSize="@dimen/doctorlogintextviewTextSize"
+			    	android:textColor="#197ecf"
+			    	android:visibility="invisible" />
+		    	
+		     </RelativeLayout>
+		    
+			 <Button
+		        android:id="@+id/doctorLoginLoginButton"
+		        android:layout_marginTop="34.0dp"
+		        android:layout_marginLeft="18.0dp"
+		        android:layout_marginRight="18.0dp"
+		        android:gravity="center"
+		        android:layout_width="match_parent"
+		        android:layout_height="44dp"
+		        android:background="@drawable/doctor_login_button_selector"
+		        android:text="登录"
+		        android:textSize="@dimen/doctorloginbuttonTextSize"
+		        android:textColor="#ffffff" />
+			 <Button
+		        android:id="@+id/doctorLoginRegestButton"
+		        android:layout_marginTop="10.0dp"
+		        android:layout_marginLeft="18.0dp"
+		        android:layout_marginRight="18.0dp"
+		        android:gravity="center"
+		        android:layout_width="match_parent"
+		        android:layout_height="44dp"
+		        android:background="@drawable/doctor_login_button_selector"
+		        android:text="注册"
+		        android:textSize="@dimen/doctorloginbuttonTextSize"
+		        android:textColor="#ffffff" />
+		     	
+		</LinearLayout>
+		
+	</ScrollView>
+	
+</LinearLayout>
